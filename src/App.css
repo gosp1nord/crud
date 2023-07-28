@@ -1,38 +1,83 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  width: 800px;
+  flex-direction: column;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.block-title {
+  display: flex;
+  justify-content: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.btn-refresh {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #03c503;
+  cursor: pointer;
+}
+.block-add {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
+}
+.title-new-card {
+  font-size: 18px;
+  font-weight: 600;
+}
+.area-new-card {
+  width: 400px;
+  height: 100px;
+  resize: none;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 5px;
+}
+.block-btn {
+  display: flex;
+  margin-top: 10px;
+}
+.btn-add {
+  display: flex;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #7c7c7c;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.block-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.block-card {
+  display: flex;
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  width: 230px;
+  margin: 8px;
+  padding: 8px;
+  position: relative;
+}
+.text-card {
+  font-size: 14px;
+}
+.dell-card {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: -10px -8px 0 0;
+  color: red;
+  background-color: white;
+  border: 1px solid #aaaaaa;
+  border-radius: 50%;
+  padding: 1px 3px 1px 4px;
+  font-size: 12px;
+  cursor: pointer;
 }
